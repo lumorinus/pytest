@@ -1,11 +1,11 @@
 class Student:
     name = ''
 
-    korean = 0
+    korean = 100
 
-    english = 0
+    english = 90
 
-    math = 0
+    math = 80
 
     def __init__(self, name, kor, eng, math):
 
@@ -19,7 +19,7 @@ class Student:
 
     def say_hello(self):
 
-        return '안녕하세요 {}님'.format(self.name)
+        return '안녕하세요 '.format(self.name)
 
     def average(self):
 
