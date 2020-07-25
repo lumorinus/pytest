@@ -1,26 +1,16 @@
-class Student:
-    name = ''
-
-    korean = 100
-
-    english = 90
-
-    math = 80
-
-    def __init__(self, name, kor, eng, math):
-
+class Person():
+    def __init__(self,name,age,address):
+        self.hello = '안녕하세요'
         self.name = name
+        self.age = age
+        self.address = address
 
-        self.korean = kor
+    def greeting(self):
+        print('{0} 저는 {1} 입니다.'.format(self.hello,self.name))
 
-        self.english = eng
+brook = Person('브룩',26,'강북구')
+brook.greeting()
 
-        self.math = math
-
-    def say_hello(self):
-
-        return '안녕하세요 '.format(self.name)
-
-    def average(self):
-
-        return (self.korean + self.english + self.math) / 3
+print('이름: ',brook.name)
+print('나이: ',brook.age)
+print('주소: ',brook.address)
